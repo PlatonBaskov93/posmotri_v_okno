@@ -53,12 +53,13 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
   gap: 30px;
 }
 
 .content__list {
   position: relative;
+  /*Если не ограничить размер блока - скролл не появляется, верстка рушится, контент выходит за границы контейнера*/
+  max-block-size: 298px;
   overflow-y: auto;
   padding-block-end: 2px;
 }
