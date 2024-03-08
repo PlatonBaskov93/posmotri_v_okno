@@ -58,8 +58,7 @@ ol {
 
 .content__list {
   position: relative;
-  /*Если не ограничить размер блока - скролл не появляется, верстка рушится, контент выходит за границы контейнера*/
-  max-block-size: 298px;
+  block-size: 298px;
   overflow-y: auto;
   padding-block-end: 2px;
 }
@@ -102,7 +101,8 @@ ol {
   margin: 3px;
 }
 
-.content__card-link_current {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
